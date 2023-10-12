@@ -14,7 +14,7 @@ int main(void)
 	{
 		if (num % div == 0)
 		{
-			num /= div;
+			num = num / div;
 		}
 		else
 		{
