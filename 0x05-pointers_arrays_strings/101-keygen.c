@@ -8,7 +8,7 @@ int main(void)
 	int start = 0;
 	char a;
 	int l_password;
-	char password[];
+	char password[MAX_SIZE];
 	int i;
 
 	for(a = '0' ; a <= '9'; a++)
@@ -27,8 +27,6 @@ int main(void)
 	}
 	charset[start] = '\0';
 
-	l_password = 25;
-	password[l_password +1];
 	srand(time(NULL));
 
 	for (i = 0; i < l_password; i++)
