@@ -8,7 +8,7 @@ int main(void)
 	int start = 0;
 	char a;
 	int l_password;
-	char password[MAX_SIZE];
+	char password[30];
 	int i;
 
 	for(a = '0' ; a <= '9'; a++)
