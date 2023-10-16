@@ -7,6 +7,9 @@ int main(void)
 	char charset[62];
 	int start = 0;
 	char a;
+	int l_password;
+	char password[];
+	int i;
 
 	for(a = '0' ; a <= '9'; a++)
 	{
@@ -24,15 +27,15 @@ int main(void)
 	}
 	charset[start] = '\0';
 
-int l_password = 25;
-char password[l_password +1];
+	l_password = 25;
+	password[l_password +1];
 	srand(time(NULL));
 
-	for (int i = 0; i < password_l; i++)
+	for (i = 0; i < l_password; i++)
 	{
 		password[i] = charset[rand() % 62];
 	}
-	password[password_l] = '\0';
+	password[l_password] = '\0';
 	printf("the password is: %s\n", password);
 
 	return (0);
