@@ -7,7 +7,7 @@ int main(void)
 	char charset[62];
 	int start = 0;
 	char a;
-	int l_password;
+	int l_password = 20;
 	char password[30];
 	int i;
 
