@@ -16,7 +16,7 @@ char *rot13(char *p)
 	{
 		for (y = 0; y < 52; y++)
 		{
-			if (p[a] == inf[y])
+			if (p[x] == inf[y])
 			{
 				p[a] = rot_info[y];
 			}
