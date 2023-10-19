@@ -3,9 +3,7 @@
  * infinite_add - function that adds two numbers.
  * @n1: first number
  * @n2: second number
- * @r: where the result will be stored
- * @size_r: size of storge area in buffer
- * Return: 0 if can't be stored in buffer
+ * @r: where the result
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
