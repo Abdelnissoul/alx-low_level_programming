@@ -18,7 +18,7 @@ char *rot13(char *p)
 		{
 			if (p[x] == inf[y])
 			{
-				p[a] = rot_info[y];
+				p[x] = rot_inf[y];
 			}
 		}
 	}
