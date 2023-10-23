@@ -4,7 +4,7 @@
  * @s: pointer to the string to be searched
  * @c: input character to be stored
  *
- * Return: (0) Success
+ * Return: (NULL) or address of s Success
  */
 char *_strchr(char *s, char c)
 {
@@ -15,5 +15,5 @@ char *_strchr(char *s, char c)
 		if (s[a] == c)
 			return (&s[a]);
 	}
-	return (0);
+	return (NULL);
 }
