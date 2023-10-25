@@ -6,18 +6,31 @@
  */
 int is_prime_number(int n)
 {
-	int x;
-
 	if (n < 2)
 	{
 		return (0);
 	}
-	for (x = 2; x <= n / 2; x++)
+	return (!is_not(n, 2));
+}
+/**
+ * is_not - helps checking wether prime or not.
+ * @n: checked numbers
+ * @d: divisor number
+ * Return: 1 for divisible 0 for not
+ */
+int is_not(int n, int d)
+{
+	if (d == 1)
 	{
-		if (n % x == 0)
-		{
-			return (0);
-		}
+		return (0);
 	}
-	return (1);
+	else if (n % d == 0)
+	{
+		return (1);
+	}
+	else if (d * d > n)
+	{
+		return (0);
+	}
+	return (is_not(n, d + 1));
 }
