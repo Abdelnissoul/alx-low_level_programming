@@ -10,7 +10,7 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (!is_not(n, 2));
+	return (is_not(n, 2));
 }
 /**
  * is_not - helps checking wether prime or not.
