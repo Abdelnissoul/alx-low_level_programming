@@ -5,7 +5,6 @@
  * Return: 1 if the string is a palindrome, 0 otherwise.
  */
 int is_palindrome(char *s)
-int checking_palindrome(char *s, int start, int end);
 {
 	int length = 0;
 
