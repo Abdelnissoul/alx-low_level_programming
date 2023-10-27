@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
 	{
 		for (s = argv[argc]; *s; s++)
 		{
-	
 			if (*s < '0' || *s > '9')
 			{
 				printf("Error\n");
