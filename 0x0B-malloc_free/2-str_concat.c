@@ -12,8 +12,8 @@ char *str_concat(char *s1, char *s2)
 	char *ptr;
 	int length;
 	int length1;
-	unsigned int x;
-	unsigned int y;
+	int x;
+	int y;
 
 	length = 0;
 	length1 = 0;
