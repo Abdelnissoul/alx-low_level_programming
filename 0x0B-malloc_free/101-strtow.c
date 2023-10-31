@@ -86,15 +86,3 @@ char **strtow(char *str)
 
 	return (w);
 }
-/**
- * free_words - Frees the memory allocated for an array of words.
- * @words: The array of words.
- */
-void free_words(char **w)
-{
-	int i;
-
-	for (i = 0; w[i] != NULL; i++)
-	free(w[i]);
-	free(w);
-}
