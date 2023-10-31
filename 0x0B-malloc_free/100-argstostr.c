@@ -14,7 +14,7 @@ char *argstostr(int ac, char **av)
 	int start;
 	int final;
 	char *str;
-	int z;
+	int z = 0;
 
 	start = 0;
 	final = 0;
