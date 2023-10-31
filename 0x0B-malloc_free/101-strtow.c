@@ -3,30 +3,30 @@
 #include <stdlib.h>
 
 /**
- * count_words - Counts the number of words in a string.
+ * calculate_words - Counts the number of words in a string.
  * @str: string.
  * Return: The number of words.
  */
-int count_words(char *str)
+int calculate_words(char *str)
 {
-	int count = 0;
-	int in_word = 0;
+	int num = 0;
+	int start = 0;
 
 	while (*str)
 	{
 		if (*str == ' ')
 		{
-			in_word = 0;
+			start = 0;
 		}
-		else if (!in_word)
+		else if (!start)
 		{
-			in_word = 1;
-			count++;
+			start = 1;
+			num++;
 		}
 		str++;
 	}
 
-	return (count);
+	return (num);
 }
 /**
  * strtow - Splits a string into words.
@@ -35,52 +35,54 @@ int count_words(char *str)
  */
 char **strtow(char *str)
 {
+	int nw;
+	char **w;
+	int start = 0;
+	char *sw = NULL;
+	int wc = 0;
+
 	if (str == NULL || *str == '\0')
 	{
 		return (NULL);
 	}
 
-	int num_words = count_words(str);
-	if (num_words == 0)
+	nw = calculate_words(str);
+	if (nw == 0)
 	{
 		return (NULL);
 	}
 
-	char **words = malloc((num_words + 1) * sizeof(char *));
-	if (words == NULL)
+	w = malloc((nw + 1) * sizeof(char *));
+	if (w == NULL)
 	{
 		return (NULL);
 	}
-
-	int word_count = 0;
-	int in_word = 0;
-	char *word_start = NULL;
 
 	while (*str)
 	{
 		if (*str == ' ')
 	{
-		if (in_word)
+		if (start)
 		{
 			*str = '\0';
-			words[word_count++] = word_start;
-			in_word = 0;
+			w[wc++] = sw;
+			start = 0;
 		}
 	}
-		else if (!in_word)
+		else if (!start)
 	{
-		in_word = 1;
-		word_start = str;
+		start = 1;
+		sw = str;
 	}
 	str++;
 	}
 
-	if (in_word)
+	if (start)
 	{
-		words[word_count++] = word_start;
+		w[wc++] = sw;
 	}
 
-	words[word_count] = NULL;
+	w[wc] = NULL;
 
-	return (words);
+	return (w);
 }
