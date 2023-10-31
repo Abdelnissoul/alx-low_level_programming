@@ -28,7 +28,7 @@ char *argstostr(int ac, char **av)
 	{
 		for (y = 0; av[x][y]; y++)
 		{
-			start = start = 1;
+			start = start + 1;
 		}
 		final = final + start + 1;
 		start = 0;
