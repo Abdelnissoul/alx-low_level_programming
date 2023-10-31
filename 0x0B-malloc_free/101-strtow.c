@@ -94,7 +94,7 @@ void free_words(char **w)
 {
 	int i;
 
-	for (i = 0; words[i] != NULL; i++)
+	for (i = 0; w[i] != NULL; i++)
 	free(w[i]);
 	free(w);
 }
