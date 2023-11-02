@@ -16,4 +16,7 @@ void *malloc_checked(unsigned int b)
 	}
 	return (ptr);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d5eb9d2ae1448fcf5563253116c7f05c4329aad7
