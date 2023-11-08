@@ -26,7 +26,7 @@ int main(int arg, char *argv[])
 		printf("Error\n");
 		return (2);
 	}
-	memcpy(&arr, &main, sizeof(main));
+	arr = (char *)main;
 
 	for (a = 0; a < b; a++)
 	{
