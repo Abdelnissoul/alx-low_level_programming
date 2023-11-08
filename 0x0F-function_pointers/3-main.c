@@ -34,5 +34,5 @@ int main(int argc, char **argv)
 		exit(100);
 	}
 	printf("%d\n", my_function(a, b));
-	retrun (0);
+	return (0);
 }
