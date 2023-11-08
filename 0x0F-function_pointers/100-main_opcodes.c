@@ -27,10 +27,10 @@ int main(int argc, char *argv[])
 		return (2);
 	}
 
-	memcpy(&arr, &main, sizeof(main));
+	arr = (char *)main;
 
 	for (a = 0; a < b; a++)
-	{
+	{i
 		if (a == b - 1)
 		{
 			printf("%02hhx\n", arr[a]);
