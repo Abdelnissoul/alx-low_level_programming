@@ -33,7 +33,7 @@ int op_sub(int a, int b)
  */
 int op_mul(int a, int b)
 {
-	retrun (a * b);
+	return (a * b);
 }
 /**
  * op_div - result of the division between two integers
