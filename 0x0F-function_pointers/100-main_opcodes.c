@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		return (2);
 	}
 
-	arr = (char *)main;
+	memcpy(&arr, &main, sizeof(main));
 
 	for (a = 0; a < b; a++)
 	{
