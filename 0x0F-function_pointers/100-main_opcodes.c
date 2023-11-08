@@ -8,7 +8,7 @@
  * @argv: array arguments
  * Return: 0 (Success) otherwise print error
  */
-int main(int arg, char *argv[])
+int main(int argc, char *argv[])
 {
 	int a;
 	int b;
@@ -26,7 +26,8 @@ int main(int arg, char *argv[])
 		printf("Error\n");
 		return (2);
 	}
-	arr = (char *)main;
+
+	memcpy(&arr, &main, sizeof(main));
 
 	for (a = 0; a < b; a++)
 	{
