@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
  * add_node_end - adds a new node at the end of list
- * @head: 
- * @str: 
+ * @head: pointer points to the string
+ * @str: string
  * Return: address of new element (S), NULL (F)
  */
 list_t *add_node_end(list_t **head, const char *str)
