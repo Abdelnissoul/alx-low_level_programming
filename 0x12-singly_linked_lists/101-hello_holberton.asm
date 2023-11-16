@@ -2,7 +2,7 @@ section		.text
 	global start
 	extern printf
 
-start:
+main:
 	mov		edi, msg
 	mov		eax, 0
 	call	printf
