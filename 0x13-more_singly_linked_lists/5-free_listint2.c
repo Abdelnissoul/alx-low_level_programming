@@ -11,7 +11,7 @@ void free_listint2(listint_t **head)
 
 	if (head == NULL)
 	{
-		return (NULL);
+		return;
 	}
 	while (*head != NULL)
 	{
@@ -19,5 +19,4 @@ void free_listint2(listint_t **head)
 		free(empty);
 	}
 	*head = NULL;
-	return (NULL);
 }
