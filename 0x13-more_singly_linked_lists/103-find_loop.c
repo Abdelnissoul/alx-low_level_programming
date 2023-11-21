@@ -7,7 +7,7 @@
 listint_t *find_listint_loop(listint_t *head)
 {
 	listint_t *start;
-	iistint_t *fin;
+	listint_t *fin;
 
 	if (head == NULL)
 	{
