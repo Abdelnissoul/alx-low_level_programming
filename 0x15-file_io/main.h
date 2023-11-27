@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#define READ_BUF_SIZE 1024
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
