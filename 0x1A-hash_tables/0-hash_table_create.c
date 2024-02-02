@@ -14,6 +14,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	new_hash = malloc(sizeof(hash_table_t));
 	if (new_hash == NULL)
 	{
+		free(new_hash);/*this as well*/
 		return (NULL);
 	}
 	new_hash->size = size;
@@ -28,4 +29,4 @@ hash_table_t *hash_table_create(unsigned long int size)
 		new_hash->array[a] = NULL;
 	}
 	return (new_hash);
-}
+	free(new_hash);/* this can be the prblm */
