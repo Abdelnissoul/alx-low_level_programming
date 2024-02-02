@@ -29,4 +29,5 @@ hash_table_t *hash_table_create(unsigned long int size)
 		new_hash->array[a] = NULL;
 	}
 	return (new_hash);
-	free(new_hash);/* this can be the prblm */
+	free(new_hash);
+}
